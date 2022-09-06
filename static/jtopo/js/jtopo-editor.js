@@ -1298,7 +1298,6 @@ editor.utils = {
   renameNodeAction: function() {
     let self = this
     let nodes = editor.scene.selectedElements
-    console.log(self, nodes);
     if (nodes && nodes.length > 0) {
       for (let i = 0; i < nodes.length; i++) {
         // self.deleteNode(nodes[i])
@@ -1307,10 +1306,14 @@ editor.utils = {
         let x = nodes[i].x
         let y = nodes[i].y
         let w = nodes[i].width
-        let ipt = document.getElementById("textName")
-        ipt.offsetTop = y
-        ipt.offsetLeft = x
-        console.log(ipt);
+        // let ipt = document.getElementById("textName")
+        // ipt.offsetTop = y
+        // ipt.offsetLeft = x
+        // console.log(ipt.value);
+        // console.log(nodes[i]);
+        // ipt.value = nodes[i].text
+        // console.log(ipt);
+        console.log();
       }
     }
   },
